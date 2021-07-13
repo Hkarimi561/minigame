@@ -1,108 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacking minigame</title>
-    <link rel="icon" type="image/png" href="favicon-32x32.png"/>
-
-    <!-- load font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-
-    <!-- measure page views -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7E64QM2WXT"></script>
-
-    <!-- local css and js -->
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="src/script.js" defer></script>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>NoPixel Minigames</title>
+    <meta name="description" content="Play the NoPixel Minigames.">
+    <link rel="canonical" href="https://sharkiller.ddns.net/nopixel_minigame/">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+    <style>
+        body{
+            background-color: #15181d;
+            margin: 30px auto;
+        }
+        .credits{
+            line-height: 40px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            color: gray;
+        }
+        .credits a{
+            color: #ccc;
+        }
+        .credits b{
+            color: white;
+        }
+    </style>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-52394643-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-52394643-1');
+    </script>
 </head>
+<body cz-shortcut-listen="true">
+<div class="credits">
+    <a href="lockpicks/">Lockpicks Minigame</a><br>
+    <a href="fleeca/">Fleeca Minigame</a><br>
+    <a href="thermite/">Thermite Minigame</a><br>
+    <a href="vault/">Vault Minigame</a><br>
+    <a href="lowervault/">Lower Vault Minigame</a><br>
+    <a href="vaultcodes/">Vault Codes Minigame</a><br><br>
+    Made by <b>Hamid</b><br>Whisper me on Discord <b>Hamid#7784</b>
+</div>
 
-
-<body>
-    
-    <div class="bg">
-
-      
-      <div class="center screen-square">
-        
-        <div class="center text-container", id="text-container">
-          <img src="assets/spy-icon.png" class="spy-icon">
-          <h3 class="loading-text" id="loading-text"><span class="capital">E</span>STABLISHING CONNECTION</h3>
-        </div>
- 
-        <div class="number-container hidden" id="number-container"></div>
-        
-
-        <div class="answer-section hidden">
-          <div class="answer-countdown">
-            <div class="answer-progress-bar"></div>
-          </div>
-          <div class="answer-question">
-          </div>
-          <div class="answer-box">
-            <div class="answer-box-description">Answer</div>
-            <div class="answer-input-area">
-              <img src="assets/spy-icon.png" class="answer-input-icon">
-              <input class="answer-input" placeholder="blue square">
-            </div>
-          </div>
-        </div>
-
-        <div class="try-again hidden">
-          <button id="try-again-button">Try again</button><br><br><br>
-          <div class="try-again-hint"><span id="submitted-reveal"></span> answer was: "<span id="answer-reveal"></span>" </div><br>
-          <div class="try-again-hint">Too fast? Practice by changing the puzzle time!</div>
-        </div>
-
-      </div>
-
-      <div class='speed-control'>
-        
-        <input type="range" id="speed-control" name="speed-control" min="5" max="30" value="7">
-        <label class="speed-label" for="speed-control">Puzzle time: <span class="time-display">7</span></label>
-        
-      </div>
-      <div class='puzzle-control'>
-        
-        <input type="range" id="puzzle-control" name="puzzle-control" min="3" max="6" value="4">
-        <label class="puzzle-label" for="puzzle-control">Puzzle Amount: <span class="puzzle-display">4</span></label>
-        
-      </div>
-      <button id="help-on" class="question-button">?</button>
-    
-      
-      <div class="credits">Hamidreza Karimi</div>
-
-      
-    </div>
-
-    
-  <div id="overlay">
-    <div id="text">
-      <h1>Hack minigame explained</h1>
-      <hr>
-      <p>
-        This is a logical reasoning test where you need to quickly connect the words, colors, and shapes.
-        <br><br>
-        You will be given the numbers one to four in a random order, 
-        then you have seven seconds to answer two questions. 
-        <br><br>
-        <img class="tutorial-image" src="assets/tutorial/numbers.jpg"><br>
-        <br><br>
-        
-        See here how the numbers are connect to the images giving us the answer square orange.<br><br>
-        
-        <img class="tutorial-image" src="assets/tutorial/puzzle.jpg">
-
-        <h2>Tip:</h2>
-        Using the slider at the bottom of the page you can change the puzzle time.<br> 
-        You can use this to practice and increase the speed when you get the hang of it. 
-      </p>
-    </div>
-  </div>
-
-</body>
-
-
-</html>
+</body></html>
